@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmihirnaik</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dash.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+   <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="d-flex flex-row bd-highlight mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="wrapper">
+          <input type="checkbox" id="btn" hidden />
+          <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </label>
+          <nav id="sidebar">
+            <div class="title">Techmihirnaik</div>
+            <ul class="list-items">
+              <li>
+                <a href="dash.html"><i class="fas fa-home"></i>DASHBOARD</a>
+              </li>
+              <li>
+                <a href="orderr.html"><i class="fas fa-sliders-h"></i>ORDERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>RETURN</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>SHIPMENTS</a>
+              </li>
+              <li>
+                <a href="addcustomer.html"><i class="fas fa-stream"></i>CUSTOMER</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>BILLING</a>
+              </li>
+              <li>
+                <a href="ratecalculator.html"><i class="fas fa-globe-asia"></i>TOOLS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i>CHANNELS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>SETTINGS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>POST SHIP</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-stream"></i>KYC</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>API</a>
+              </li>
+              <li>
+                <a href="support.html"><i class="fas fa-globe-asia"></i>SUPPORT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="container-liquid">
+          <div class="text-right">
+            <a class="btn btn-primary" href="walletbutton.html">WALLET</a>
+          </div>
+        <div class="container">
+          <ul class="nav nav-tabs mt-4 ml-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="support.html">Help Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tools_ticket.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customersupport.html">Customer Support</a>
+            </li>
+          </ul>
+         
+        
+          </div>
+          <div class="question section mt-4">
+            <h4><i class="bi bi-question"></i><b>Billing and Taxation</b></h4>
+            <p><i></i></p>
+
+          </div>
+          <ul uk-accordion>
+            <li class="uk-open ml-2">
+                <a class="uk-accordion-title ml-2" href="#">Where can I see the total price spent for a certain shipment/order? </a>
+                <div class="uk-accordion-content ml-2">
+                    <p>You can check the dissemination of delivery charges for every one of your shipments in the board. Generously follow the means referenced underneath
+                      <ol type="i">  
+                        <li> Log in to your Shirocket account.</li> 
+                        <li>Head to the 'Billings' choice on the left menu.</li>
+                        <li> Click on the 'Delivery Charges' tab.</li> 
+                        In this tab, search by the AWB number of your shipment. You will actually want to detect the 'Absolute Freight Charges' part on the screen, showing up against your AWB number. Under this segment, you can track down the point by point bifurcation of the pertinent charges on your shipment, for instance forward charges (FWD), get back to beginning charges (RTO), Cash on conveyance charges (COD) and then some. 
+                      </ol>  
+                    </p>
+                </div>
+            </li>
+            <li>
+                <a class="uk-accordion-title ml-2" href="#">When does Postica  measure the bill for my shipments? </a>
+                <div class="uk-accordion-content ml-2">
+                    <p>We measure a bill for your shipments at regular intervals. The bill is just handled for shipments with-
+                      <ol type="i">  
+                        <li> The accompanying shipment status - Delivered/RTO conveyed/RTO recognized/Damaged/Destroyed after for 8-10 days in the given shipment status.</li> 
+                        <li>The charged weight is available and there is no continuous weight error for the shipment.</li>
+                        When your shipments have been charged, you will get an email with the subtleties alongside the receipt that must be paid. You can likewise check the rundown of your charged shipments in the Postica  board under the 'Charging' segment. Go to the solicitations tab, look for the receipt, click on see receipt and download the dominate to see the shipment subtleties.
+                        </ol>
+                    </p>
+                </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title ml-2" href="#">How can I update my shipping invoice's inaccurate company information?</a>
+              <div class="uk-accordion-content ml-2">
+                  <p>Assist us with distinguishing the erroneous or missing data from your organization subtleties page, so we can help you better. Kindly select at least one alternatives underneath. Upon your determination, you will be taken to a screen where you can amend the erroneous data as well as add any missing data.
+                    <ol type="1">
+                      <li>Your organization subtleties</li>
+                      <li>Organization Name:</li>
+                      <li>Charging Address:</li>
+                      <li>GSTIN:</li>
+                    </ol>
+                  In case this is mistaken, kindly enter the subtleties that should be available in the receipt.
+                    <ol type="1">
+                      <li>Erroneous/Missing Company Name</li>
+                      <li>Erroneous/Missing Company Address</li>
+                      <li>Missing GSTIN</li>
+                      <li>Others</li>
+                    </ol>
+                  </p>
+              </div>
+           </li>
+
+            <li>
+                <a class="uk-accordion-title ml-2" href="#">The bill has been created incorrectly.</a>
+                <div class="uk-accordion-content ml-2">
+                    <p>Assist us with distinguishing the mistaken or missing data in your receipt alongside your receipt number, so we can help you better.
+                      If it's not too much trouble, select the Invoice ID (from your last month's solicitations), where you may have mistaken/missing data
+                      Enter the qualities isolated with comma or press enter..</p>
+                </div>
+            </li>
+
+            <li>
+              <a class="uk-accordion-title ml-2" href="#">For my shipping, I require an invoice (s)</a>
+              <div class="uk-accordion-content ml-2">
+                  <p>NOTE : We just interaction the cargo bill for shipments with-
+                    The accompanying conveyance status - Delivered/RTO conveyed/RTO recognized/Damaged/Destroyed, for 8-10 days in the given shipment status.
+                    The charged weight is accessible and there is no continuous request weight disparity for the shipment.
+                    <br>
+                    Enter the qualities isolated with comma or press enter.</p>
+              </div>
+          </li>
+
+          <li>
+            <a class="uk-accordion-title ml-2" href="#">For my account, I require a ledger statement.</a>
+            <div class="uk-accordion-content ml-2">
+                <p>To create a record report, select a fitting date range beneath.</p>
+            </div>
+        </li>
+
+        <li>
+          <a class="uk-accordion-title ml-2" href="#">To get my tax refund, I'll require a TDS form. </a>
+          <div class="uk-accordion-content ml-2">
+              <p>If it's not too much trouble, transfer the TDS testament for asserting your burdened sum.</p>
+          </div>
+      </li>
+
+      <li>
+        <a class="uk-accordion-title ml-2" href="#">Where can I get the details on my credit note? </a>
+        <div class="uk-accordion-content ml-2">
+            <p>To demand the credit note subtleties for a shipment(s), if it's not too much trouble, enter its AWB number/Order ID.
+            <br>
+            Request ID
+            <br>
+            AWB Number
+            <br>
+            Enter the AWB Number/Order ID here</p>
+        </div>
+    </li>
+
+        </ul>
+       
+         
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

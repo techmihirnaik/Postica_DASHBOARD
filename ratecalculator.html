@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rate Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="d-flex flex-row bd-highlight mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="wrapper">
+          <input type="checkbox" id="btn" hidden />
+          <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </label>
+          <nav id="sidebar">
+            <div class="title">Techmihirnaik</div>
+            <ul class="list-items">
+              <li>
+                <a href="dash.html"><i class="fas fa-home"></i>DASHBOARD</a>
+              </li>
+              <li>
+                <a href="orderr.html"><i class="fas fa-sliders-h"></i>ORDERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>RETURN</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>SHIPMENTS</a>
+              </li>
+              <li>
+                <a href="addcustomer.html"
+                  ><i class="fas fa-stream"></i>CUSTOMER</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>BILLING</a>
+              </li>
+              <li>
+                <a href="ratecalculator.html"
+                  ><i class="fas fa-globe-asia"></i>TOOLS</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i>CHANNELS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>SETTINGS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>POST SHIP</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-stream"></i>KYC</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>API</a>
+              </li>
+              <li>
+                <a href="support.html"
+                  ><i class="fas fa-globe-asia"></i>SUPPORT</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="container-liquid">
+          <div class="text-right">
+            <a class="btn btn-primary" href="walletbutton.html">WALLET</a>
+          </div>
+        </div>
+        <div class="container mt-4 ml-2">
+          <div class="ratecalc">
+            <h3>Shipping Rates Calculator</h3>
+            <hr />
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="ratecalculator.html"
+                  >Domestic</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shipinternational.html"
+                  >International</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pincodemapping.html"
+                  >Pincode Mapping</a
+                >
+              </li>
+            </ul>
+            <form>
+              <div class="form-group mt-3">
+                <label for="shipment"
+                  >Shipment Type<span style="color: red">*</span></label
+                >
+                <select class="form-control" id="shipment" required>
+                  <option>Forward</option>
+                  <option>Return</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pincode"
+                  >Pick-Up Area Pincode<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="pincode"
+                  name="pincode"
+                  placeholder="Pickup Area Pincode"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="deliverypincode"
+                  >Delivery Area Pincode<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="deliverypin"
+                  name="deliverypin"
+                  placeholder="Delivery Area Pincode"
+                  required
+                />
+              </div>
+              <div class="form-row align-items-center">
+                <div class="col-auto">
+                  <label for="formGroupExampleInput2"
+                    >Dimensions<span style="color: red">*</span></label
+                  >
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">cm</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inlineFormInputGroup"
+                      placeholder="L;B;H"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row align-items-center">
+                <div class="col-auto">
+                  <label for="formGroupExampleInput"
+                    >Approximate Weight<span style="color: red">*</span></label
+                  >
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">Kg</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inlineFormInputGroup"
+                      placeholder="Eg.0.5"
+                    />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <label for="formGroupExampleInput"
+                    >Declared Value in INR<span style="color: red"
+                      >*</span
+                    ></label
+                  >
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">₹</div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inlineFormInputGroup"
+                      placeholder="Declared Value"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-success">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-calculator"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
+                  ></path>
+                  <path
+                    d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z"
+                  ></path>
+                </svg>
+                Calculator
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

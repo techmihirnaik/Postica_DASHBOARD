@@ -1,0 +1,89 @@
+body {
+    @media  and (max-width:"1200px") and (min-width:"480px") {
+        width:"200px" !important;
+        
+    }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.container-liquid{
+    width: 6rem;
+}
+.w2{
+    width: 200px;
+}
+.cont{
+    width: 16rem;
+}
+.nav{
+    display: -webkit-box;
+    font-size: xx-small;
+    width: 17rem;
+}
+.btn{
+    width: 4rem;
+    font-size: 10px;
+}
+.dFlex{
+    flex-wrap: wrap;
+}
+.card1{
+    font-size: xx-small;
+}
+.b2{
+    font-size: xx-small;
+    margin-bottom: -5px;
+}
+.fa .fa-angle-down .fa-angle-down:before{
+    width: 28px;
+    height: 25px;
+  
+}
+.input-group{
+    width: 231px;
+    height: 9px;
+}
+.w3{
+    font-size: 1rem;
+}
+.w8{
+    font-size: 25px;
+}
+.form-control1{
+    width: 179px;
+    font-size: 8px;
+}
+#inputEmail14{
+    font-size: 1rem;
+}
+#nav1{
+    flex-wrap: nowrap;
+}
+.w4{
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+.table, thead, tbody, th, td, tr{
+    display: revert;
+    overflow-y: scroll;
+    font-size: 5px;
+   
+}
+.bt1{
+    margin-bottom: 10px;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}

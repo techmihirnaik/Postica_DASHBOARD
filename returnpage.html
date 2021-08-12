@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmihirnaik</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+      integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="d-flex flex-row bd-highlight mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="wrapper">
+          <input type="checkbox" id="btn" hidden />
+          <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </label>
+          <nav id="sidebar">
+            <div class="title">Techmihirnaik</div>
+            <ul class="list-items">
+              <li>
+                <a href="dash.html"><i class="fas fa-home"></i>DASHBOARD</a>
+              </li>
+              <li>
+                <a href="orderr.html"><i class="fas fa-sliders-h"></i>ORDERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>RETURN</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>SHIPMENTS</a>
+              </li>
+              <li>
+                <a href="addcustomer.html"><i class="fas fa-stream"></i>CUSTOMER</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>BILLING</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-globe-asia"></i>TOOLS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i>CHANNELS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>SETTINGS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>POST SHIP</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-stream"></i>KYC</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>API</a>
+              </li>
+              <li>
+                <a href="support.html"><i class="fas fa-globe-asia"></i>SUPPORT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="container">
+         <!-- <ul class="nav nav-tabs mt-4 ml-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="support.html">Help Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tools_ticket.html">Tickets</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="customersupport.html">Customer Support</a>
+            </li>
+
+           
+          </ul>-->
+          <div class="searching mt-3 ml-4">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Find your answers"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="item">
+              <div class="item-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    PICK UP POC DETAILS
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div class="t-p">
+
+                 
+                    
+                        <div class="fields fields--2">
+                            <label class="field">
+                              <span class="field__label" for="firstname">First name</span>
+                              <input class="field__input" type="text" id="firstname"  />
+                            </label>
+                            <label class="field">
+                              <span class="field__label" for="lastname">Last name</span>
+                              <input class="field__input" type="text" id="lastname" />
+                            </label>
+                            <label class="field">
+                                <span class="field__label" for="address">Address</span>
+                                <input class="field__input" type="text" id="address" />
+                              </label>
+                              <label class="field">
+                                <span class="field__label" for="country">Country</span>
+                                <select class="field__input" id="country">
+                                  <option value=""></option>
+                                  <option value="unitedstates">United States</option>
+                                </select>
+                              </label>
+                          </div>
+                          <div class="fields fields--3">
+                            <label class="field">
+                              <span class="field__label" for="zipcode">Zip code</span>
+                              <input class="field__input" type="text" id="zipcode" />
+                            </label>
+                            <label class="field">
+                              <span class="field__label" for="city">City</span>
+                              <input class="field__input" type="text" id="city" />
+                            </label>
+                            <label class="field">
+                              <span class="field__label" for="state">State</span>
+                              <!-- <input class="field__input" type="select" id="city" /> -->
+                               <select name="selection">
+                                 <option value="">Choose State Name</option>
+                      <option value="Andhra Pradesh">Andhra Pradesh</option>
+                      <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                      <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                      <option value="Assam">Assam</option>
+                      <option value="Bihar">Bihar</option>
+                      <option value="Chandigarh">Chandigarh</option>
+                      <option value="Chhattisgarh">Chhattisgarh</option>
+                      <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                      <option value="Daman and Diu">Daman and Diu</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Lakshadweep">Lakshadweep</option>
+                      <option value="Puducherry">Puducherry</option>
+                      <option value="Goa">Goa</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Himachal Pradesh">Himachal Pradesh</option>
+                      <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                      <option value="Jharkhand">Jharkhand</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Kerala">Kerala</option>
+                      <option value="Madhya Pradesh">Madhya Pradesh</option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Manipur">Manipur</option>
+                      <option value="Meghalaya">Meghalaya</option>
+                      <option value="Mizoram">Mizoram</option>
+                      <option value="Nagaland">Nagaland</option>
+                      <option value="Odisha">Odisha</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Rajasthan">Rajasthan</option>
+                      <option value="Sikkim">Sikkim</option>
+                      <option value="Tamil Nadu">Tamil Nadu</option>
+                      <option value="Telangana">Telangana</option>
+                      <option value="Tripura">Tripura</option>
+                      <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      <option value="Uttarakhand">Uttarakhand</option>
+                      <option value="West Bengal">West Bengal</option>
+                      </select>
+                      
+                      
+                      
+                            </label>
+                          </div>
+                      
+                  
+                  
+                 
+                 
+              </div>
+            </div>
+            
+            <div class="item mt-4 mb-4">
+              <div class="item-header" id="headingTwo">
+                <h2 class="mb-0 ">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Payment & Pricing
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordionExample"
+              >
+                <div class="t-p">
+                  <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                      <div class="cod">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">COD Remittance</h5>
+                            
+                            <p class="card-text">COD Remittance and Reconcilation<br>Early COD</p>
+                            <a href="cod.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="plan">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Plan Related</h5>
+                            
+                            <p class="card-text">Plans and Pricing, Plan Upgrade<br>Downgrade</p>
+                            <a href="plan.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="billing">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Billing and Taxation</h5>
+                            
+                            <p class="card-text">Freight and Subscription invoice,<br>Ledger and Credit Note</p>
+                            <a href="bill.html" class="card-link">Check Info</a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                     <div class="wallet">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Wallet Balance</h5>
+                          
+                          <p class="card-text">Your Wallet Transactions and Balance Queries</p>
+                          <a href="wallet.html" class="card-link">Check Info</a>
+                          
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="kyc">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">KYC Verification</h5>
+                            
+                            <p class="card-text">Automated and Manual KYC<br>Verification Process & Status</p>
+                            <a href="kyc.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="bank">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Bank Verification</h5>
+                           
+                            <p class="card-text">Bank Account Verification <br> Process and Status</p>
+                            <a href="bank.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Orders,Integration & Tech Related
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingThree"
+                data-parent="#accordionExample"
+              >
+                <div class="t-p">
+                  <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                      <div class="channel">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Channel Integration</h5>
+                            
+                            <p class="card-text">Channel Integration, Order Sync, Connection Error</p>
+                            <a href="Channel Integration.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="api">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">API Integration</h5>
+                            
+                            <p class="card-text">API Integration Process and Usage Queries</p>
+                            <a href="API Integration.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="orders">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Orders</h5>
+                            
+                            <p class="card-text">Manual and Bulk Order Processing and Cancellation</p>
+                            <a href="Orders.html" class="card-link">Check Info</a>
+                           
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                     <div class="return">
+                      <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Return Orders</h5>
+                          
+                          <p class="card-text">Create, Process and Track Return Orders</p>
+                          <a href="Return Orders.html" class="card-link">Check Info</a>
+                          
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="mobile">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Mobile App Related</h5>
+                            
+                            <p class="card-text">Android & iOS App Related Queries</p>
+                            <a href="Mobile App Related.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                    <div class="p-2 bd-highlight">
+                      <div class="issues">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">Issues with the Panel</h5>
+                           
+                            <p class="card-text">Raise a Support Ticket with Postica</p>
+                            <a href="Issues with the Panel.html" class="card-link">Check Info</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

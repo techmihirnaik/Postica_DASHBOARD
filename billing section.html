@@ -1,0 +1,243 @@
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<head>
+    <link rel="stylesheet" href="billing section.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-default" bg-light>
+        <div class="container-liquid">
+            <div class="text-right">
+                
+                         <br><br>
+                         <a href = "mywalletcode.html">
+                     <button type="submit" class="btn btn-lg btn-primary"><b>Wallet</b></button>
+                    </a>
+                    </div>
+                        
+                        
+                      
+                      </form>
+                    </div>
+            
+            <ul class="nav nav-tabs">
+                <h1 id="1"> BILLING </h1>
+                <hr size="8" width="90%">
+                <li><a data-toggle="tab" href="#WeightReconciliation">Weight Reconciliation </a></li>
+                <li><a data-toggle="tab" href="#ShippingCharges">Shipping Charges</a></li>
+                <li><a data-toggle="tab" href="#RemittanceLogs">Remittance Logs</a></li>
+                <li><a data-toggle="tab" href="#RechargeLogs">Recharge Logs</a></li>
+                <li><a data-toggle="tab" href="#On-HoldReconciliation">On Hold-Reconciliation</a></li>
+                <li><a data-toggle="tab" href="#Invoice">Invoice</a></li>
+
+              <li><a data-toggle="tab" href="#Passbooks">Passbook</a></li>
+                <li><a data-toggle="tab" href="#CreateReciept">Create Reciept</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="tab-content">
+        <div id="WeightReconciliation" class="tab-pane fade in active">
+            <table>
+                <tr>
+                    <th>
+                        <input class="form-control form-control-lg" type="date" name="dateofbirth" id="dateofbirth">
+                    </th>
+                    <th>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control form-control-lg" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn  btn-primary " >Search</button>
+                            <i class="fas fa-search"></i></th>
+                            <th>
+                            <div class="form-group">
+                                <label for="sel1"></label>
+                                <select class="form-control form-control-lg">
+                                    <option>All Statuses</option>
+                                    <option>New Discrepansy</option>
+                                    <option>Dispute Raised</option>
+                                    <option>Discrepansy accepted</option>
+                                    <option>Dispute Rejected by Courier</option>
+                                    <option>Dispute Accepted by Courier</option>
+                                    <option>Auto Accept</option>
+                                    <option>SR Credit</option>
+                                </select>
+                            </div></th>
+                            <th>
+                            <div class="form-group">
+                                <label for="sel1"></label>
+                                <select class="form-control form-control-lg"">
+                                    <option>All</option>
+                                    <option>Raised</option>
+                                    <option>In Progress</option>
+                                    <option>Resolved</option>
+                                    <option>Closed</option>
+                                  
+                                </select>
+                            </div></th><th>
+                            <button class="btn btn-lg btn-primary" type="submit">Request Weight Freeze</button>
+                            <i class="fas fa-search"></i></th>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="ShippingCharges" class="tab-pane fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center">
+                            <h1>ADD YOUR FIRST ORDER TO GET STARTED</h1>
+                            <button type="button" class="btn btn-primary btn-lg"> Add Order</button>
+                            <button type="button" class="btn btn-secondary btn-lg">Pull Order From Channel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="RemittanceLogs" class="tab-pane fade">
+            <table>
+                <tr>
+                    <td></td>
+                    <td> <label for="orderdate">
+                        </label>
+                        <input type="date" name="dateofbirth" id="dateofbirth"></td>
+                </tr>
+            </table>
+            <hr>
+            <div class="row mx-md-n5">
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"> <h3>COD to be Remitted</h3> <h4>Rs.0.00</h4>
+                    </div>
+                </div>
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"><h3>Last COD Remitted</h3> <h4> Rs.0.00 </h4>
+                    </div>
+                </div>
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"><h3>Total COD Remitted</h3> <h4> Rs.0.00 <h4>
+                    </div>
+                </div>
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"><h3>Total Reversal Amount</h3> <h4> Rs.0.00 </h4>
+                    </div>
+                </div>
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"><h3>Remittance Initiated</h3> <h4> Rs.0.00 </h4>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <h2><b>COMING SOON!</b></h2>
+                </div>
+        </div>
+        <div id="RechargeLogs" class="tab-pane fade">
+            <table>
+                <tr>
+                    <td></td>
+                    <td> <label for="orderdate">
+                        </label>
+                        <input type="date" name="dateofbirth" id="dateofbirth"></td>
+                </tr>
+            </table>
+            <hr>
+            <div class="row mx-md-n5">
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"><h3>Successful Recharge</h3> <h4> Rs.0.00 </h4>
+                    </div>
+                </div>
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"><h3>Total Credit</h3> <h4> Rs.0.00 </h4>
+                    </div>
+                </div>
+                <div class="col px-md-5 text-center">
+                    <div class="p-3 border bg-primary text-white"><h3>Total Debit</h3> <h4> Rs.0.00 </h4>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="p-3 mb-2 bg-light text-dark"><b>Date</b></div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-3 mb-2 bg-light text-dark"><b>Transaction ID</b></div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-3 mb-2 bg-light text-dark"><b>Amount</b></div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="p-3 mb-2 bg-light text-dark"> <b>Description</b></div>
+                </div>
+            </div>
+        </div>
+        <div id="On-HoldReconciliation" class="tab-pane fade">
+            <table>
+                <tr>
+                    <td></td>
+                    <td> <label for="orderdate">
+                        </label>
+                        <input type="date" name="dateofbirth" id="dateofbirth"></td>
+                    <td>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search by order no." aria-label="Search">
+                            <button class="my-2 my-sm-0 btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="Invoice" class="tab-pane fade">
+            <div class="text-left">
+                <button type="button1" class="btn btn-primary btn-lg">Freight Invoices-APR 2020 Onwards</button>
+                <button type="button" class="btn btn-secondary btn-lg">All other invoices</button>
+            </div>
+        </div>
+        
+        <div id="Passbooks" class="tab-pane fade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center">
+                            <h1>ADD YOUR FIRST ORDER TO GET STARTED</h1>
+                            <button type="button" class="btn btn-primary btn-lg"> Add Order</button>
+                            <button type="button" class="btn btn-secondary btn-lg">Pull Order From Channel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="CreateReciept" class="tab-pane fade">
+            <div class="container">
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Note Id</th>
+                            <th>Note Number</th>
+                            <th>Note Date</th>
+                            <th>Total (Rs.)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

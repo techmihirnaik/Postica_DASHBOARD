@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmihirnaik</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/css/uikit.min.css"
+    />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.1/dist/js/uikit-icons.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+      integrity="sha512-xnP2tOaCJnzp2d2IqKFcxuOiVCbuessxM6wuiolT9eeEJCyy0Vhcwa4zQvdrZNVqlqaxXhHqsSV1Ww7T2jSCUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="d-flex flex-row bd-highlight mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="wrapper">
+          <input type="checkbox" id="btn" hidden />
+          <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </label>
+          <nav id="sidebar">
+            <div class="title">Techmihirnaik</div>
+            <ul class="list-items">
+              <li>
+                <a href="dash.html"><i class="fas fa-home"></i>DASHBOARD</a>
+              </li>
+              <li>
+                <a href="orderr.html"><i class="fas fa-sliders-h"></i>ORDERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>RETURN</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>SHIPMENTS</a>
+              </li>
+              <li>
+                <a href="addcustomer.html"
+                  ><i class="fas fa-stream"></i>CUSTOMER</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>BILLING</a>
+              </li>
+              <li>
+                <a href="ratecalculator.html"><i class="fas fa-globe-asia"></i>TOOLS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i>CHANNELS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>SETTINGS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>POST SHIP</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-stream"></i>KYC</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>API</a>
+              </li>
+              <li>
+                <a href="support.html"
+                  ><i class="fas fa-globe-asia"></i>SUPPORT</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="container-liquid">
+          <div class="text-right">
+              <button1 type="button" data-toggle="collapse" data-target="#recharge" class="btn btn-md btn-primary"><b>Wallet</b></button1>
+             <br><br>
+              <div id="recharge" class="collapse">
+                  <form action="/action_page.php">
+                       <label for="Amount"><h5><b>Amount</b>:</h5></label>
+                        <input type="text" class="form-inline" id="recharge" placeholder="Enter Amount" name="recharge">
+                       <br><br>
+                   <button type="submit" class="btn btn-md btn-primary"><b>Recharge</b></button>
+                  </div>
+                      
+                      
+                    
+                    </form>
+                  </div>
+          </div>
+        <div class="container">
+          <ul class="nav nav-tabs mt-4 ml-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="support.html">Help Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tools_ticket.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customersupport.html">Customer Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="questionsect-2 mt-4">
+          <h4><i class="bi bi-question"></i><b>Shipment Tracking</b></h4>
+          <p><i>Proficient Methods To Demand Pickups For Your Shipments </i></p>
+        </div>
+        <ul uk-accordion>
+          <li class="uk-open ml-2">
+            <a class="uk-accordion-title ml-2" href="#"
+              >How to follow the status of my shipment(s)?
+            </a>
+            <div class="uk-accordion-content ml-2">
+              <p>
+                You can follow all your shipment(s) in your Postica  board. We have a following board where you can follow every one of your shipments post their pickup.
+              </p>
+			  <p> To follow your shipment, kindly follow the means referenced underneath
+1. Go to the Shipments - > Track Tab from the left menu. In this tab, you can discover the situation with all your the shipments.
+2. You can likewise look through your shipment either with AWB No. or then again your client's portable No. We additionally permit the choice to channel your orders by means of date and shipment situations with. In this tab you can likewise realize the assessed conveyance date of your shipments.
+</p>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title ml-2" href="#"
+              >Shipment status mismatch with the organization's following site?
+            </a>
+            <div class="uk-accordion-content ml-2">
+              <p>
+                We comprehend that your shipment status is crisscrossing with the dispatch organization's site. Benevolently assist us with recognizing the AWB(s) that you are confronting issues with. You can likewise decide to glue the applicable AWB numbers in the beneath segments or transfer a dominate document according to your comfort. Enter the qualities isolated with comma or press enter.
+              </p>
+            </div>
+          </li>
+          <li>
+            <a class="uk-accordion-title ml-2" href="#"
+              >Shipment status has not been refreshed in the Posticaboard.
+            </a>
+            <div class="uk-accordion-content ml-2">
+              <p>
+                We comprehend that your shipment status has not been refreshed. To assist us with distinguishing the issue better, benevolently enter the AWB(s) whose situations with not been refreshed in the board or transfer a dominate record according to your comfort. Enter the qualities isolated with comma or press enter.  
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

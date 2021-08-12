@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmihirnaik</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="d-flex flex-row bd-highlight mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="wrapper">
+          <input type="checkbox" id="btn" hidden />
+          <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </label>
+          <nav id="sidebar">
+            <div class="title">Techmihirnaik</div>
+            <ul class="list-items">
+              <li>
+                <a href="dash.html"><i class="fas fa-home"></i>DASHBOARD</a>
+              </li>
+              <li>
+                <a href="orderr.html"><i class="fas fa-sliders-h"></i>ORDERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>RETURN</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>SHIPMENTS</a>
+              </li>
+              <li>
+                <a href="addcustomer.html"
+                  ><i class="fas fa-stream"></i>CUSTOMER</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>BILLING</a>
+              </li>
+              <li>
+                <a href="ratecalculator.html"
+                  ><i class="fas fa-globe-asia"></i>TOOLS</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i>CHANNELS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>SETTINGS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>POST SHIP</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-stream"></i>KYC</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>API</a>
+              </li>
+              <li>
+                <a href="support.html"
+                  ><i class="fas fa-globe-asia"></i>SUPPORT</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="container">
+          <ul class="nav nav-tabs mt-4 ml-3">
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Help Center</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tools_ticket.html">Tickets</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="customersupport.html"
+                >Customer Support</a
+              >
+            </li>
+          </ul>
+          <div class="searching mt-3 ml-3">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your search term here"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion" id="accordionExample">
+            <h3>Billing</h3>
+            <hr />
+            <div class="item">
+              <div class="t-p">
+                <div
+                  class="flex-container"
+                  style="display: flex; flex-direction: column"
+                >
+                  <div style="flex-grow: 1">
+                    <div style="display: flex; flex-direction: row">
+                      <div style="margin-left: 50px">
+                        <h5>Billing & Remittance</h5>
+                        <p>- What are the necessary steps to be fulf..</p>
+                        <p>- I want to check how much COD is pendin..</p>
+                        <p>- I want to upgrade my Shiprocket plan. Ho..</p>
+                        <p>- How soon can I receive my COD amount in...</p>
+                        <p>- What is Shiprocket Postpaid? How do I act..</p>
+                      </div>
+                      <div style="margin-left: 200px">
+                        <h5>Invoice Management</h5>
+                        <p>- How to generate invoice and label for single..</p>
+                        <p>- How many times do I get freight invoices in..</p>
+                        <p>- Please explain the Paid and Unpaid Freight In..</p>
+                        <p>- How to print eway bill number on shipping lab..</p>
+                        <p>- What happens if I don't pay my invoice?</p>
+                      </div>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <div style="flex-grow: 1">
+                    <div style="display: flex; flex-direction: row">
+                      <div style="margin-left: 50px">
+                        <h5>My Account Billing</h5>
+                        <p>
+                          - Where can I see the recharge history for my pr..
+                        </p>
+                      </div>
+                      <div style="margin-left: 200px">
+                        <h5>Shiprocket Wallet</h5>
+                        <p>
+                          - I'm not able to recharge my wallet. Please help!..
+                        </p>
+                        <p>- Can I get my COD payment directly in my Ship..</p>
+                        <p>
+                          - My transaction is successful, but I haven't recei..
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
