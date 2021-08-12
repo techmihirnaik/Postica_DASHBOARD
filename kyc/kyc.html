@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kyc.css" />
+    <title>Dashboard-KYC</title>
+  </head>
+  <body>
+    <header class="header__kyc">
+      <div class="header__kyc-menu">Complete Your KYC</div>
+    </header>
+    <main class="main__kyc">
+      <div class="main__kyc-ques">
+        Are you an individual or a company running the buisness
+      </div>
+      <div class="main__kyc-btn">
+        <button class="button main__kyc-btn1">Individual</button>
+        <button class="button main__kyc-btn2 notactive">Comapny</button>
+      </div>
+      <div class="company_kyc hidden">
+        <label for="type">Please Select your Company Type</label>
+        <select name="type" id="company">
+          <option value="select">Please select your company type</option>
+          <option value="Sole Proprietorship">Sole Proprietorship</option>
+          <option value="partnership">Partnership</option>
+          <option value="Limited availability partnership">
+            Limited availability partnership
+          </option>
+          <option value="Public limited company">Public limited company</option>
+          <option value="Private limited company">
+            Private limited company
+          </option>
+        </select>
+      </div>
+      <div class="main__kyc-sugges">Complete the below mentioned KYC steps</div>
+      <div class="kyc__container kyc__photo" data-id="4">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">1</div>
+            <div class="photo__header__name">Personal Information</div>
+          </div>
+
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        <form action="SUBMIT" class="individual--kyc">
+          <label for="name">First Name</label>
+          <input type="text" placeholder="First Name" />
+
+          <label for="name">Last Name</label>
+          <input type="text" placeholder="Last Name" />
+
+          <label for="age">Age</label>
+          <input type="text" placeholder="Age" />
+
+          <label for="nationality">Nationality</label>
+          <input type="text" placeholder="Nationality" />
+
+          <label for="contact">Contact Number</label>
+          <input type="text" placeholder="Contact Number" />
+
+          <label for="email">Email</label>
+          <input type="email" placeholder="Email Id" />
+
+          <label for="contact">Adhaar Number</label>
+          <input type="text" placeholder="Adhaar Number" />
+
+          <button class="button">Submit</button>
+        </form>
+      </div>
+
+      <div class="kyc__container kyc__reg kyc__image notactive" data-id="5">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">2</div>
+            <div class="photo__header__name">Photo verification</div>
+          </div>
+
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+
+        <div class="kyc__reg-container image__individual hidden">
+          <div class="first-kyc">
+            <div class="photo__sugges">Please upload your Photograph</div>
+            <div class="photo__box">
+              <div class="photo">
+                <div class="icon"></div>
+                <button class="button">Upload the Image</button>
+              </div>
+            </div>
+            <button class="button saveImg">Save Image</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kyc__container kyc__reg kyc__aadhar notactive" data-id="6">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">3</div>
+            <div class="photo__header__name">Aadhaar Verification</div>
+          </div>
+
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+
+        <div class="kyc__reg-container aadhar__individual hidden">
+          <div class="first-kyc">
+            <div class="photo__sugges">
+              Please upload your Aadhaar card Image
+            </div>
+            <div class="photo__box">
+              <div class="photo">
+                <div class="icon"></div>
+                <button class="button">Upload The Aadhaar</button>
+              </div>
+            </div>
+            <button class="button saveImg">Save Image</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kyc__container kyc__reg kyc__company hidden" data-id="0">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">1</div>
+            <div class="photo__header__name">
+              Company Registration Documents
+            </div>
+          </div>
+
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+
+        <div class="kyc__reg-container">
+          <form method="POST">
+            <label for="reg ID">Enter The Registration ID</label>
+            <input type="text" />
+          </form>
+          <div class="first-kyc">
+            <div class="photo__sugges">
+              Please upload the Company Registration Certificate
+            </div>
+            <div class="photo__box">
+              <div class="photo">
+                <div class="icon"></div>
+                <button class="button">Upload The Document</button>
+              </div>
+            </div>
+            <button class="button saveImg">Save Image</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kyc__container kyc__Pan kyc__company hidden" data-id="1">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">2</div>
+            <div class="photo__header__name">PAN Identification</div>
+          </div>
+
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        <div class="kyc__Pan--container hidden">
+          <form method="POST">
+            <label for="reg ID">Enter The PAN Number</label>
+            <input type="text" />
+          </form>
+          <div class="first-kyc">
+            <div class="photo__sugges">
+              Please uplaod your PAN CARD image and enter your valid PAN Number
+            </div>
+            <div class="photo__box">
+              <div class="photo">
+                <div class="icon"></div>
+                <button class="button">Upload PAN Card Image</button>
+              </div>
+            </div>
+            <button class="button saveImg">Save Image</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kyc__container kyc__logo kyc__company hidden" data-id="2">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">3</div>
+            <div class="photo__header__name">Website Logo</div>
+          </div>
+
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        <div class="kyc__logo--container hidden">
+          <div class="first-kyc">
+            <div class="photo__sugges">Please upload your website Logo</div>
+            <div class="photo__box">
+              <div class="photo">
+                <div>Upload the logo in jpeg/jpg/png format</div>
+                <div class="icon"></div>
+                <button class="button">Uplaod the logo</button>
+              </div>
+            </div>
+            <button class="button saveImg">Save Image</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="kyc__container kyc__gst kyc__company hidden" data-id="3">
+        <div class="kyc__header">
+          <div class="header_content">
+            <div class="photo__header__num circle">4</div>
+            <div class="photo__header__name">GST ID verification</div>
+          </div>
+
+          <div class="icon-dropDown dropDown1"></div>
+        </div>
+        <div class="kyc__gst--container hidden">
+          <form method="POST">
+            <label for="gst-id">Enter The GST ID</label>
+            <input type="text" />
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./kyc.js"></script>
+</html>

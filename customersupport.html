@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmohirnaik</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="d-flex flex-row bd-highlight mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="wrapper">
+          <input type="checkbox" id="btn" hidden />
+          <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </label>
+          <nav id="sidebar">
+            <div class="title">Techmihirnaik</div>
+            <ul class="list-items">
+              <li>
+                <a href="dash.html"><i class="fas fa-home"></i>DASHBOARD</a>
+              </li>
+              <li>
+                <a href="orderr.html"><i class="fas fa-sliders-h"></i>ORDERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>RETURN</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>SHIPMENTS</a>
+              </li>
+              <li>
+                <a href="addcustomer.html"
+                  ><i class="fas fa-stream"></i>CUSTOMER</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>BILLING</a>
+              </li>
+              <li>
+                <a href="ratecalculator.html"
+                  ><i class="fas fa-globe-asia"></i>TOOLS</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i>CHANNELS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>SETTINGS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>POST SHIP</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-stream"></i>KYC</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>API</a>
+              </li>
+              <li>
+                <a href="support.html"
+                  ><i class="fas fa-globe-asia"></i>SUPPORT</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="container-liquid">
+          <div class="text-right">
+            <a class="btn btn-primary" href="walletbutton.html">WALLET</a>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="accordion" id="accordionExample">
+            <div class="item">
+              <div class="item-header" id="headingOne">
+                <div
+                  class="flex-container"
+                  style="display: flex; flex-direction: row"
+                >
+                  <h4 style="flex-grow: 4">Customer Support</h4>
+                  <a
+                    class="btn btn-link"
+                    href="support.html"
+                    style="
+                      flex-grow: 1;
+                      color: #fff;
+                      font-weight: 400;
+                      font-size: 20px;
+                      margin-top: -9px;
+                      background-color: rgb(44, 42, 42);
+                    "
+                    >Support</a
+                  >
+                </div>
+
+                <hr />
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+                data-parent="#accordionExample"
+              >
+                <div
+                  class="t-p"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  "
+                >
+                  <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">
+                      <div class="pickup">
+                        <div class="card" style="width: 22rem">
+                          <div
+                            class="card-body"
+                            style="
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              background-color: rgb(250, 169, 169);
+                            "
+                          >
+                            <img src="assets/order_management.png" />
+                            <h5 style="margin-top: 15px">
+                              <a
+                                class="card-title"
+                                style="color: #000"
+                                href="order_management.html"
+                                >Order Management</a
+                              >
+                            </h5>
+                          </div>
+                        </div>
+                      </div>
+                  
+                  </div>
+                  <div class="p-2 bd-highlight">
+                    <div class="delivery">
+                      <div class="card" style="width: 22rem">
+                        <div
+                          class="card-body"
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            background-color: rgb(250, 240, 169);
+                          "
+                        >
+                          <img src="assets/channel_integration.png" />
+                          <h5 style="margin-top: 15px">
+                            <a
+                              class="card-title"
+                              style="color: #000"
+                              href="channel_integration.html"
+                              >Channel Integration</a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-2 bd-highlight">
+                    <div class="ndr">
+                      <div class="card" style="width: 22rem">
+                        <div
+                          class="card-body"
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            background-color: rgb(169, 250, 195);
+                          "
+                        >
+                          <img src="assets/international_shipping.png" />
+                          <h5 style="margin-top: 15px">
+                            <a
+                              class="card-title"
+                              style="color: #000"
+                              href="international.html"
+                              >International Shipping</a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-row bd-highlight mb-3">
+                  <div class="p-2 bd-highlight">
+                    <div class="shipping">
+                      <div class="card" style="width: 22rem">
+                        <div
+                          class="card-body"
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            background-color: rgb(169, 226, 250);
+                          "
+                        >
+                          <img src="assets/billing.png" />
+                          <h5 style="margin-top: 15px">
+                            <a
+                              class="card-title"
+                              style="color: #000"
+                              href="billing.html"
+                              >Billing and Remittances</a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-2 bd-highlight">
+                    <div class="weight">
+                      <div class="card" style="width: 22rem">
+                        <div
+                          class="card-body"
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            background-color: rgb(248, 189, 240);
+                          "
+                        >
+                          <img src="assets/weight_disputes.png" />
+                          <h5 style="margin-top: 15px">
+                            <a
+                              class="card-title"
+                              style="color: #000"
+                              href="weightdisputes.html"
+                              >Weight Disputes</a
+                            >
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

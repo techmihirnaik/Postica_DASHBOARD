@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techmihirnaik</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dash.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="d-flex flex-row bd-highlight mb-3">
+      <div class="p-2 bd-highlight">
+        <div class="wrapper">
+          <input type="checkbox" id="btn" hidden />
+          <label for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </label>
+          <nav id="sidebar">
+            <div class="title">Techmihirnaik</div>
+            <ul class="list-items">
+              <li>
+                <a href="dash.html"><i class="fas fa-home"></i>DASHBOARD</a>
+              </li>
+              <li>
+                <a href="orderr.html"><i class="fas fa-sliders-h"></i>ORDERS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>RETURN</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>SHIPMENTS</a>
+              </li>
+              <li>
+                <a href="addcustomer.html"
+                  ><i class="fas fa-stream"></i>CUSTOMER</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>BILLING</a>
+              </li>
+              <li>
+                <a href="ratecalculator.html"
+                  ><i class="fas fa-globe-asia"></i>TOOLS</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-envelope"></i>CHANNELS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-address-book"></i>SETTINGS</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-cog"></i>POST SHIP</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-stream"></i>KYC</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i>API</a>
+              </li>
+              <li>
+                <a href="support.html"
+                  ><i class="fas fa-globe-asia"></i>SUPPORT</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="p-2 bd-highlight">
+        <div class="container">
+          <div class="container-liquid">
+            <div class="text-right">
+              <a class="btn btn-primary" href="walletbutton.html">WALLET</a>
+            </div>
+          </div>
+          <div class="add-customer">
+            <h3><b>ADD CUSTOMER</b></h3>
+            <hr />
+
+            <form>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault01"
+                    ><b>Customer First name</b
+                    ><span style="color: red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault01"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault02"
+                    ><b>Customer Last name1</b
+                    ><span style="color: red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault02"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault02"
+                    >Customer Email Addres<span style="color: red"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault02"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="inputAddress"
+                    >Customer Address<span style="color: red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Address"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="inputAddress"
+                    >Address 2<span style="color: red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Address"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="inputNumbee"
+                    >Customer Phone Number<span style="color: red"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="inputNumber"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault03"
+                    ><b>City</b> <span style="color: red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault03"
+                    required
+                  />
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault04"
+                    >State<span style="color: red">*</span></label
+                  >
+                  <select
+                    class="custom-select"
+                    id="validationDefault04"
+                    required
+                  >
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault05"
+                    >Zip<span style="color: red">*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationDefault05"
+                    required
+                  />
+                </div>
+              </div>
+
+              <button class="btn btn-primary mt-2" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

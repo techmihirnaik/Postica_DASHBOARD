@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Return</title>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="toggleBox2">
+            <div class="toggle">
+                <input type="checkbox" id="2">
+            </div>
+        </div>
+        <h4>Allow your customers to place return requests for their orders</h4>
+        <h6>Congratulations! Your customers can now place return requests for their orders from the SR tracking page. If you want to enable Refunds for your customers, complete the given below configurations along with other customization configurations</h6>
+    </div>
+    <br>
+    <div class="container mt-3">
+        <h4>Refund Configurations</h4>
+        <div class="toggleBox2">
+            <div class="toggle">
+                <input type="checkbox" id="2">
+            </div>
+        </div>
+        <h6>Turn this toggle ON to allow refunds against COD orders</h6>
+        <p><small>By Enabling this option, your customers can enter their bank account details for receiving refunds, on returns page</small></p>
+
+        <div class="toggleBox2">
+            <div class="toggle">
+                <input type="checkbox" id="2">
+            </div>
+        </div>
+        <h6>Turn this toggle ON to allow refunds against prepaid orders</h6>
+    </div>
+    <br>
+    <div class="container mt-3">
+        <h4>Returns Configurations</h4><br>
+        <h6>Select the number of days for which you allow returns on your products --- <label for="cars">Days after which order delivered:</label>
+            <select placeholder="days">
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="mercedes">3</option>
+                <option value="audi">4</option>
+            </select>
+        </h6>
+        <p>Keep it 'Days' if you don't have any minimum return period. Your buyer won't be able to place a return request if the order exceeds this time period.</p>
+
+
+        <div class="toggleBox2">
+            <div class="toggle">
+                <input type="checkbox" id="2">
+            </div>
+        </div>
+        <h4>Turn the toggle ON, if you allow quality check on returns orders, placed by your customers</h4>
+
+        <div class="toggleBox2">
+            <div class="toggle">
+                <input type="checkbox" id="2">
+            </div>
+        </div>
+        <h4>Turn the toggle ON, if you allow returns on all your SKUs</h4>
+
+        
+        <h4>Please upload a list of SKUs for which you do not allow returns</h4>
+        <p><small>Download your existing SKUs from here and upload the same below</small></p>
+    </div>
+    <div class="container mt-3">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
